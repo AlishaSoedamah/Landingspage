@@ -1,0 +1,29 @@
+$font: "ariel", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//Colours
+$off-white: #f2f4f5;
+$off-black: rgb(32, 32, 32);
+$orange-accent: rgb(248, 83, 0);
+
+body {
+    font-family: $font;
+    font-size: 16px;
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    @media (max-width: 1440px) {
+        with: 1280px;
+        min-with: 1280px;
+    }
+    @media (max-width: 1280px) {
+        with: 976px;
+        min-with: 976px;
+    }
+    @media (max-width: 976px) {
+        with: 768pc;
+        min-with: 768pc;
+    }
+}
