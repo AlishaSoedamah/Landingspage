@@ -1,5 +1,13 @@
 $font: "ariel", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+//noted these for later
+// 1600, 1440, 1280, 1120, 960, 800
+
+//Headings
+h1 {font-size: 6rem};
+h2 {font-size: 3rem};
+h3 {font-size: 1.5rem};
+
 //Colours
 $off-white: #f2f4f5;
 $off-black: rgb(32, 32, 32);
@@ -8,22 +16,77 @@ $orange-accent: rgb(248, 83, 0);
 body {
     font-family: $font;
     font-size: 16px;
+    background-color: $off-white;
+    color: $off-black;
 }
 
+//WORK ON MOBILE SITE FIRST!!!
 .container {
-    width: 1640px;
-    min-width: 1640px;
+    width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
-    @media (max-width: 1440px) {
-        with: 1280px;
-        min-with: 1280px;
-    }
     @media (max-width: 1280px) {
         with: 976px;
         min-with: 976px;
     }
-    @media (max-width: 976px) {
-        with: 768pc;
-        min-with: 768pc;
+    @media (max-width: 800px) {
+        with: 500px;
+        min-with: 500px;
+    }
+}
+
+//Header 
+header {
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    .inner-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .logo {
+            a {
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $off-black;
+            }
+        }
+        .navigation {
+            nav {
+                a {
+                    margin: 0 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $off-black;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Banner 
+.banner {
+    .row {
+        height: 100vh;
+        .main-text {
+            display: flex;
+            align-items: center;
+            background-color: $off-white;
+            position: relative;
+        }
+        .sub-text {
+            display: flex;
+            align-items: center;
+            background-color: $off-white;
+            position: relative;
+            max-width: 640px;
+        }
     }
 }
