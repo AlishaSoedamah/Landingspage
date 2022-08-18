@@ -1,12 +1,29 @@
 $font: "ariel", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 //noted these for later
-// 1600, 1440, 1280, 1120, 960, 800
+// 1600, 1440, 1280, 1120, 960, 800, 640, 480, 320, 160
 
 //Headings
-h1 {font-size: 6rem};
-h2 {font-size: 3rem};
-h3 {font-size: 1.5rem};
+h1 {
+    font-size: 6rem; 
+    @media(max-width: 640px){
+        font-size: 4em;
+    }
+     @media(max-width: 480px){
+        font-size: 3em;
+    }
+};
+h2 {
+    font-size: 4rem; 
+    @media(max-width: 640px) {
+        font-size: 2em;
+    }
+};
+h3 {font-size: 1.5rem;};
+
+h1,h2,h3 {
+    text-transform: uppercase;
+}
 
 //Colours
 $off-white: #f2f4f5;
@@ -20,18 +37,30 @@ body {
     color: $off-black;
 }
 
-//WORK ON MOBILE SITE FIRST!!!
+
 .container {
     width: 1440px;
     min-width: 1440px;
     margin: 0 auto;
     @media (max-width: 1280px) {
-        with: 976px;
-        min-with: 976px;
+        width: 760px;
+        min-width: 760px;
     }
     @media (max-width: 800px) {
-        with: 500px;
-        min-with: 500px;
+        width: 620px;
+        min-width: 620px;
+    }
+    @media (max-width: 640px) {
+        width: 460px;
+        min-width: 460px;
+    }
+    @media (max-width: 480px) {
+        width: 320px;
+        min-width: 320px;
+    }
+    @media (max-width: 350px) {
+        width: 260px;
+        min-width: 260px;
     }
 }
 
@@ -68,13 +97,11 @@ header {
             }
         }
     }
-
 }
 
 //Banner 
 .banner {
     .row {
-        height: 100vh;
         .main-text {
             display: flex;
             align-items: center;
@@ -88,5 +115,15 @@ header {
             position: relative;
             max-width: 640px;
         }
+    }
+}
+
+//Footer
+.inner-footer {
+    .offic-row {
+        color: $off-black;
+    }
+    .socials-row {
+        color: $off-black;
     }
 }

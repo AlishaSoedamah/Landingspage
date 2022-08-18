@@ -1,11 +1,11 @@
 import React from 'react'
-// import { useStaticQuery, graphql } from 'gatsby'
+// import { graphql } from 'gatsby'
 // import Img from "gatsby-image"
 
 const Banner = () => {
 //  const query = graphql`
 //     query {
-//         file(relativePath: { eq: "../images/example.png" }) {
+//         lights(relativePath: { eq: "lights.jpg" }) {
 //         childImageSharp {
 //             fixed(width: 300) {
 //             ...GatsbyImageSharpFixed
@@ -25,7 +25,7 @@ const Banner = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit voluptatibus consequuntur saepe doloribus accusantium? Voluptas assumenda sit qui, expedita, reiciendis ut, possimus labore fugit minima enim natus unde voluptatum. Laudantium qui architecto, voluptas aliquid pariatur fuga unde quidem eum placeat voluptatibus, cupiditate consequuntur natus delectus soluta incidunt ex ipsa.
                     </div>
                     <div className="main-img">
-                    {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
+                        {/* // <Img fixed={data.lights.childImageSharp.fixed} /> */}
                     </div>
                 </div>
             </div>
