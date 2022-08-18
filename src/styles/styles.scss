@@ -4,26 +4,13 @@ $font: "ariel", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 // 1600, 1440, 1280, 1120, 960, 800, 640, 480, 320, 160
 
 //Headings
-h1 {
-    font-size: 6rem; 
-    @media(max-width: 640px){
-        font-size: 4em;
-    }
-     @media(max-width: 480px){
-        font-size: 3em;
-    }
-};
-h2 {
-    font-size: 4rem; 
-    @media(max-width: 640px) {
-        font-size: 2em;
-    }
-};
-h3 {font-size: 1.5rem;};
-
 h1,h2,h3 {
     text-transform: uppercase;
 }
+
+h1 { font-size: clamp(3rem, 10vw, 6rem); }
+h2 { font-size: clamp(2rem, 10vw, 4rem); }
+h3 { font-size: clamp(1.5rem, 10vw, 2rem); }
 
 //Colours
 $off-white: #f2f4f5;
@@ -36,7 +23,6 @@ body {
     background-color: $off-white;
     color: $off-black;
 }
-
 
 .container {
     width: 1440px;
@@ -84,6 +70,9 @@ header {
             }
         }
         .navigation {
+            @media (max-width: 640px) {
+                display: none;
+            }
             nav {
                 a {
                     margin: 0 20px;
@@ -119,11 +108,14 @@ header {
 }
 
 //Footer
-.inner-footer {
-    .offic-row {
-        color: $off-black;
-    }
-    .socials-row {
-        color: $off-black;
+footer > * {
+    text-transform: uppercase;
+    .inner-footer {
+        .office-row {
+            color: $off-black;
+        }
+        .socials-row {
+            color: $off-black;
+        }
     }
 }
