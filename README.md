@@ -1,3 +1,4 @@
-<h1 align="center">
-  Another Gatsby project
-</h1>
+# Another project made with Gatsby and :heart:
+
+### Note helpful sources here:
+- (docs) https://www.gatsbyjs.com/docs
