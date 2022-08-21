@@ -3,11 +3,10 @@ import { Link } from "gatsby";
 
 const Footer = () => (
   <footer className="container">
+      <h1>Stay in touch 👋</h1>  
+      <p>Send us an email</p>
+      <h2><Link to="/">fakemail@gmail.com</Link></h2>
       <div className="inner-footer">
-        <h1>Stay in touch 👋</h1>  
-        <p>Send us an email</p>
-        <h2><Link to="/">fakemail@gmail.com</Link></h2>
-        
         <div className="office-row">
             <p>Office</p>
             <Link to="/">amsterdam</Link>
