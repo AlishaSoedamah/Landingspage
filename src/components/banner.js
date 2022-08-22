@@ -1,10 +1,11 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 
-// import StaticImage from "gatsby-image"
-import { StaticImage } from "gatsby-plugin-image"
 
-const Banner = () => {
 
+const Banner = ( {data} ) => {
+    console.log(data);
     return (
         <div className="banner">
             <div className="container">
@@ -15,18 +16,22 @@ const Banner = () => {
                     <div className="sub-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit voluptatibus consequuntur saepe doloribus accusantium? Voluptas assumenda sit qui, expedita, reiciendis ut, possimus labore fugit minima enim natus unde voluptatum. Laudantium qui architecto, voluptas aliquid pariatur fuga unde quidem eum placeat voluptatibus, cupiditate consequuntur natus delectus soluta incidunt ex ipsa.
                     </div>
-                    <div className="main-img">
-                        <StaticImage
-                        src="../images/lights.jpg"
-                        width={300} 
-                        alt="Lights"
-                        placeholder="blurred"
-                        />
-                    </div>
+                </div>
+                <div className="main-img">
+                    <GatsbyImage src={data.file.publicUrl} />
                 </div>
             </div>
         </div>
     );
 }
 
+export const HomepageQuery = graphql`
+query HomepageQuery {
+    file(relativePath: {eq: "lights.jpg"}) {
+      publicURL
+    }
+  }
+  
+`
 export default Banner;
+
