@@ -1,8 +1,8 @@
 import * as React from "react"
-import Layout from '../components/Layout'
 import '../styles/styles.scss'
 
-//Import components
+// Import components
+import Layout from '../components/Layout'
 import Banner from '../components/banner'
 import About from '../components/about'
 import Product from '../components/product'
@@ -18,3 +18,4 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+

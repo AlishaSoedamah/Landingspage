@@ -1,6 +1,10 @@
 import React from "react";
 import PlaceholderImg from '../images/lights.jpg'
 
+//page content
+import JSONData from "../content/Content.json"
+
+
 const Banner = ( {data} ) => {
     console.log(data);
     return (
@@ -8,10 +12,10 @@ const Banner = ( {data} ) => {
             <div className="container">
                 <div className="row">
                     <div className="main-text">
-                       <h1>The future in our hands</h1>
+                       <h1>{JSONData.introTitle}</h1>
                     </div>
                     <div className="sub-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit voluptatibus consequuntur saepe doloribus accusantium? Voluptas assumenda sit qui, expedita, reiciendis ut, possimus labore fugit minima enim natus unde voluptatum. Laudantium qui architecto, voluptas aliquid pariatur fuga unde quidem eum placeat voluptatibus, cupiditate consequuntur natus delectus soluta incidunt ex ipsa.</p>
+                        <p>{JSONData.introDesc}</p>
                     </div>
                 </div>
                 <div className="main-img">
