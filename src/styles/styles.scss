@@ -52,6 +52,10 @@ body {
     }
 }
 
+img  {
+    width: 10em;
+}
+
 //Header 
 header {
     height: 80px;
@@ -110,13 +114,41 @@ header {
 }
 
 //About
+.container {
+    .about-blurb {
+        background: $orange-accent;
+    }
+    .services {
+        background: pink;
+    }
+}
+
 //Product
+.container {
+    .main-product-blurb {
+        display: flex;
+        .product-blurb__img {
+            width: 10em;
+        }
+        .product-blurb {
+            .product-blurb__text-block {
+                background: red;
+            }
+        }
+        .product-blurb__text-block {
+            background: greenyellow;    
+        }
+    }
+    .product-reviews {
+        background: blue;
+    }
+}
 
 //Footer
 footer > * {
     text-transform: uppercase;
     .inner-footer {
-        // display: flex;
+        display: flex;
         .inner-footer__office {
             color: $off-black;
         }
