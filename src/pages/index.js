@@ -5,15 +5,15 @@ import '../styles/styles.scss'
 import Header from '../components/header'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
-import About from './about'
-import Product from './product'
+import About from '../components/about'
+import Product from '../components/product'
 
 const IndexPage = () => (
   <div>
     <Header/>
     <Banner/>
-    <About/>
     <Product/>
+    <About/>
     <Footer/>
   </div>
 )
