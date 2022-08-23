@@ -22,6 +22,22 @@ const Product = () => (
             </div>
         </div>
         <div className="product-reviews">
+            {/* rev 1 */}
+            <div className="product-review__img">
+                <img src={PlaceholderImg} alt="" />
+                <p>{JSONData.shortProductReview}</p>
+            </div>
+            {/* rev 2 */}
+            <div className="product-review__img">
+                <img src={PlaceholderImg} alt="" />
+                <p>{JSONData.shortProductReview}</p>
+            </div>
+            {/* rev 3 */}
+            <div className="product-review__img">
+                <img src={PlaceholderImg} alt="" />
+                <p>{JSONData.shortProductReview}</p>
+            </div>
+            {/* rev 4 */}
             <div className="product-review__img">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>

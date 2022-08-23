@@ -3,9 +3,9 @@ import '../styles/styles.scss'
 
 // Import components
 import Layout from '../components/Layout'
-import Banner from '../components/banner'
-import About from '../components/about'
-import Product from '../components/product'
+import Banner from '../components/Banner'
+import About from '../components/About'
+import Product from '../components/Product'
 
 const IndexPage = () => (
   <div>

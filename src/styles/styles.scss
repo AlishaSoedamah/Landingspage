@@ -1,5 +1,4 @@
 $font: "ariel", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 //noted these for later
 // 1600, 1440, 1280, 1120, 960, 800, 640, 480, 320, 160
 
@@ -26,9 +25,10 @@ body {
     color: $off-black;
 }
 
+// Main media queries 
 .container {
-    width: 1440px;
-    min-width: 1440px;
+    width: 1340px;
+    min-width: 1340px;
     margin: 0 auto;
     @media (max-width: 1280px) {
         width: 760px;
@@ -41,6 +41,10 @@ body {
     @media (max-width: 640px) {
         width: 460px;
         min-width: 460px;
+        
+        .navigation {
+            display: none;
+        }
     }
     @media (max-width: 480px) {
         width: 320px;
@@ -53,7 +57,7 @@ body {
 }
 
 img  {
-    width: 10em;
+    width: 20em;
 }
 
 //Header 
@@ -76,9 +80,6 @@ header {
             }
         }
         .navigation {
-            @media (max-width: 640px) {
-                display: none;
-            }
             nav {
                 a {
                     margin: 0 20px;
@@ -96,52 +97,45 @@ header {
 
 //Banner 
 .banner {
+    display: grid;
+    grid-template-areas:
+    'row row hero hero'
+    'row row hero hero';
     .row {
+    grid-area: row;
         .main-text {
-            display: flex;
-            align-items: center;
-            background-color: $off-white;
-            position: relative;
+            width: 70ch;
         }
         .sub-text {
-            display: flex;
-            align-items: center;
-            background-color: $off-white;
-            position: relative;
             max-width: 640px;
         }
+    }
+    .main-img {
+        grid-area: hero;
+        mix-blend-mode: difference;
     }
 }
 
 //About
-.container {
-    .about-blurb {
-        background: $orange-accent;
-    }
-    .services {
-        background: pink;
-    }
-}
+// .container {
+//     .about-blurb {
+       
+//     }
+//     .services {
+       
+//     }
+// }
 
 //Product
 .container {
     .main-product-blurb {
-        display: flex;
-        .product-blurb__img {
-            width: 10em;
-        }
-        .product-blurb {
-            .product-blurb__text-block {
-                background: red;
-            }
-        }
-        .product-blurb__text-block {
-            background: greenyellow;    
-        }
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 10px;
     }
-    .product-reviews {
-        background: blue;
-    }
+    // .product-reviews {
+    // }
 }
 
 //Footer
