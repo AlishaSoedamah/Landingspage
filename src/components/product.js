@@ -23,22 +23,22 @@ const Product = () => (
         </div>
         <div className="product-reviews">
             {/* rev 1 */}
-            <div className="product-review__img">
+            <div className="product-review__one">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
             </div>
             {/* rev 2 */}
-            <div className="product-review__img">
+            <div className="product-review__two">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
             </div>
             {/* rev 3 */}
-            <div className="product-review__img">
+            <div className="product-review__three">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
             </div>
             {/* rev 4 */}
-            <div className="product-review__img">
+            <div className="product-review__four">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
             </div>

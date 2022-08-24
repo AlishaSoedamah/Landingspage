@@ -25,6 +25,7 @@ body {
     color: $off-black;
 }
 
+// this is bs 
 img  {
     width: 20em;
 }
@@ -64,49 +65,6 @@ header {
     }
 }
 
-//Banner 
-.banner {
-    // display: grid;
-    // grid-template-areas:
-    // 'row row hero hero'
-    // 'row row hero hero';
-    .row {
-    grid-area: row;
-        .main-text {
-            width: 70ch;
-        }
-        .sub-text {
-            max-width: 640px;
-        }
-    }
-    .main-img {
-        grid-area: hero;
-        mix-blend-mode: difference;
-    }
-}
-
-//About
-// .container {
-//     .about-blurb {
-       
-//     }
-//     .services {
-       
-//     }
-// }
-
-//Product
-.container {
-    .main-product-blurb {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 10px;
-        padding: 10px;
-    }
-    // .product-reviews {
-    // }
-}
-
 //Footer
 footer > * {
     text-transform: uppercase;
@@ -126,13 +84,107 @@ footer > * {
     width: 1340px;
     min-width: 1340px;
     margin: 0 auto;
+
+    //Banner 
+    .banner {
+        display: grid;
+        grid-template-areas:
+          'row row . .'
+          'row row hero-img hero-img'
+          'row row hero-img hero-img';
+        gap: 10px;
+        padding: 10px;
+        .row {
+            grid-area: row;
+            .main-text {
+                width: 70ch;
+            }
+            .sub-text {
+                max-width: 640px;
+            }
+        }
+        .main-img {
+            grid-area: hero-img;
+        }
+    }
+
+    // Product pg 1 grid
+    .main-product-blurb {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    // Center this on the page
+    // Product pg 2 grid
+    .product-reviews {
+        display: grid;
+        grid-template-areas:
+          '. . revOne revOne . .'
+          'revTwo revTwo revTwo revThree revThree revThree'
+          '. . revFour revFour . .';
+        gap: 10px;
+        padding: 10px;
+
+        .product-review__one {
+            grid-area: revOne;
+        }
+        .product-review__two {
+            grid-area: revTwo;
+        }
+        .product-review__three {
+            grid-area: revThree;
+        }
+        .product-review__four {
+            grid-area: revFour;
+        }
+      }
+
+    //  About 
+    .about {
+        display: grid;
+        grid-template-areas:
+          'about about services services'
+          'about about services services';
+        
+        gap: 10px;
+        padding: 10px;
+        .about-blurb {
+            grid-area: about;
+        }
+        .services {
+            grid-area: services;
+        }
+    }
+
     @media (max-width: 1280px) {
         width: 760px;
         min-width: 760px;
+        .main-product-blurb {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
     }
+     // Tablet 
     @media (max-width: 800px) {
         width: 620px;
         min-width: 620px;
+
+        .banner {
+            display: block;
+        }
+
+        .main-product-blurb {
+            display: block;
+        }
+
+        .product-reviews {
+            display: block;
+        }
+
     }
     @media (max-width: 640px) {
         width: 460px;
@@ -141,11 +193,21 @@ footer > * {
         .navigation {
             display: none;
         }
+
+        .main-text {
+            width: 40ch;
+        }
     }
     @media (max-width: 480px) {
         width: 320px;
         min-width: 320px;
+
+        .main-text {
+            width: 40ch;
+        }
+
     }
+    // Mobile
     @media (max-width: 350px) {
         width: 260px;
         min-width: 260px;

@@ -7,8 +7,8 @@ import JSONData from "../content/Content.json"
 
 const Banner = () => {
     return (
-        <div className="banner">
-            <div className="container">
+        <div className="container">
+            <div className="banner">
                 <div className="row">
                     <div className="main-text">
                        <h1>{JSONData.introTitle}</h1>

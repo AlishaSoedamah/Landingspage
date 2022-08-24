@@ -6,12 +6,14 @@ import JSONData from "../content/Content.json"
 
 const About = () => (
     <div className="container">
-        <h1>{JSONData.aboutTitle}</h1>
-        <div className="about-blurb">
-            <p>{JSONData.aboutContent}</p>
-        </div>
-        <div className="services">
-            <span>soon there will be more available</span>
+        <div className="about">
+            <h1>{JSONData.aboutTitle}</h1>
+            <div className="about-blurb">
+                <p>{JSONData.aboutContent}</p>
+            </div>
+            <div className="services">
+                <span>soon there will be more available</span>
+            </div>
         </div>
     </div>
 )
