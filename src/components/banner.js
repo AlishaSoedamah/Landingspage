@@ -5,8 +5,7 @@ import PlaceholderImg from '../images/lights.jpg'
 import JSONData from "../content/Content.json"
 
 
-const Banner = ( {data} ) => {
-    console.log(data);
+const Banner = () => {
     return (
         <div className="banner">
             <div className="container">
