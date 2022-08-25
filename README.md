@@ -4,5 +4,7 @@
 - (docs) https://www.gatsbyjs.com/docs
 
 ### TODO'S 📝📝📝
-#### Latest update 22.08.22
-- [ ] Actually get to styling the website
+#### Latest update 25.08.22
+- [ ] Change all js files to tsx 
+- [ ] Fix animations on scroll 
+- [ ] Fix media queries
