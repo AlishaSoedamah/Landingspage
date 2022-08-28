@@ -116,30 +116,31 @@ footer > * {
         padding: 10px;
     }
 
-    // Center this on the page
     // Product pg 2 grid
-    .product-reviews {
-        display: grid;
-        grid-template-areas:
-          '. . revOne revOne . .'
-          'revTwo revTwo revTwo revThree revThree revThree'
-          '. . revFour revFour . .';
-        gap: 10px;
-        padding: 10px;
 
-        .product-review__one {
-            grid-area: revOne;
+   
+        .product-reviews {
+            display: grid;
+            grid-template-areas:
+            '. . revOne revOne . .'
+            'revTwo revTwo revTwo revThree revThree revThree'
+            '. . revFour revFour . .';
+            align-items: center;
+            justify-content: center;
+            .product-review__one {
+                grid-area: revOne;
+            }
+            .product-review__two {
+                grid-area: revTwo;
+            }
+            .product-review__three {
+                grid-area: revThree;
+            }
+            .product-review__four {
+                grid-area: revFour;
+            }
         }
-        .product-review__two {
-            grid-area: revTwo;
-        }
-        .product-review__three {
-            grid-area: revThree;
-        }
-        .product-review__four {
-            grid-area: revFour;
-        }
-      }
+    
 
     //  About 
     .about {
@@ -194,18 +195,17 @@ footer > * {
             display: none;
         }
 
-        .main-text {
-            width: 40ch;
+        .banner {
+            .row {
+                .main-text {
+                    width: 30ch;
+                }
+            }
         }
     }
     @media (max-width: 480px) {
         width: 320px;
         min-width: 320px;
-
-        .main-text {
-            width: 40ch;
-        }
-
     }
     // Mobile
     @media (max-width: 350px) {
