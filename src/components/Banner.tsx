@@ -1,5 +1,5 @@
 import React from "react";
-import PlaceholderImg from '../images/lights.jpg'
+import PlaceholderImg from '../images/lights.jpg';
 
 //page content
 import JSONData from "../content/Content.json"
