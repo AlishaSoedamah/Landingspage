@@ -21,8 +21,8 @@ const Product = () => (
                 <p>{JSONData.productDesc}</p>
             </div>
         </div>
-        <div className="product-reviews">
-            {/* <div className="product-review__one">
+        {/* <div className="product-reviews">
+            <div className="product-review__one">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
             </div>
@@ -37,9 +37,9 @@ const Product = () => (
             <div className="product-review__four">
                 <img src={PlaceholderImg} alt="" />
                 <p>{JSONData.shortProductReview}</p>
-            </div> */}
+            </div> 
             
-        </div>
+        </div>*/}
         
     </div>
     
