@@ -3,7 +3,6 @@ import * as React from "react"
 //import content 
 import JSONData from "../content/Content.json"
 
-
 const About = () => (
     <div className="container">
         <div className="about">

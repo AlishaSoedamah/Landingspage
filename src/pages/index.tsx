@@ -12,7 +12,6 @@ import ProductPageTwo from '../components/ProductPageTwo'
 const IndexPage = () => (
   <div>
     <Layout>
-
       <Banner/>
       <Product/>
       <ProductPageTwo/>
