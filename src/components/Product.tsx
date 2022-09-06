@@ -20,6 +20,7 @@ const Product = () => (
             <div className="product-blurb__text-block">
                 <p>{JSONData.productDesc}</p>
             </div>
+            
         </div>
         {/* <div className="product-reviews">
             <div className="product-review__one">

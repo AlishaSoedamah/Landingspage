@@ -13,7 +13,7 @@ export default function App() {
     for (const productRev of productRevs) {
       results.push(
 
-        <div key="index">
+        <div className="container" key="index">
           <img src={productRev.img} alt="" />
           <h3>{productRev.name}</h3>
           <p>{productRev.review}</p>

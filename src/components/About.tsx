@@ -6,7 +6,7 @@ import JSONData from "../content/Content.json"
 const About = () => (
     <div className="container">
         <div className="about">
-            <h1>{JSONData.aboutTitle}</h1>
+            <h1 className="about-title">{JSONData.aboutTitle}</h1>
             <div className="about-blurb">
                 <p>{JSONData.aboutContent}</p>
             </div>

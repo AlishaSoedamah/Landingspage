@@ -63,14 +63,29 @@ header {
 //Footer
 footer > * {
     text-transform: uppercase;
-    .inner-footer {
+}
+
+.extra-deco {
+    font-weight: bold;
+}
+
+.inner-footer {
+    display: grid;
+    grid-template-areas:
+      'office socials'
+      'office socials'
+      'office socials';
+    .inner-footer__office a {
+        color: $off-black;
+        text-decoration: none;
+        grid-area: office;
+    }
+    .inner-footer__socials a {
+        text-decoration: none;
+        color: $off-black;
+        grid-area: socials;
         display: flex;
-        .inner-footer__office {
-            color: $off-black;
-        }
-        .inner-footer__socials {
-            color: $off-black;
-        }
+        flex-direction: column;
     }
 }
 // Main media queries 
@@ -105,8 +120,9 @@ footer > * {
     .main-product-blurb {
         display: grid;
         grid-template-columns: auto auto auto;
-        gap: 10px;
-        padding: 10px;
+        .product-blurb__text-block{
+            max-width: 70%;
+        }
     }
     // Product pg 2 grid
         .product-reviews {
@@ -134,11 +150,15 @@ footer > * {
     .about {
         display: grid;
         grid-template-areas:
+          'title title title title'
           'about about services services'
           'about about services services';
         
         gap: 10px;
         padding: 10px;
+        .about-title {
+            grid-area: title;
+        }
         .about-blurb {
             grid-area: about;
         }
