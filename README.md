@@ -5,7 +5,9 @@
 - <a href='https://dev.to/mteheran/typescript-ultimate-guide-for-beginners-1dlo'>TypeScript: Ultimate guide for beginners</a> 
 
 ### TODO'S 📝📝📝
-#### Last update 31.08.22
-- [ ] Change all js files to tsx 
+#### Last update 09.09.22
+- [x] Change all js files to tsx 
 - [ ] Fix animations on scroll 
 - [ ] Fix media queries
+- [ ] Should prob learn ts
+- [ ] Make contact form
